@@ -13,6 +13,6 @@ apt-get update
 apt-get install -y git make
 
 cd ~ && test -d docker-install || git clone $DOCKER_INSTALL_REPO
-cd smesh
+cd docker-install
 git fetch origin
 make install
