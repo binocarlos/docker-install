@@ -23,6 +23,15 @@ then you can:
 $ docker --version
 ```
 
+## vagrant
+
+if you are using vagrant - run this command to allow the vagrant user access to the docker socket:
+
+```
+$ sudo usermod -aG docker vagrant
+```
+
+
 ## notes
 
 you can use docker for installing software (containers).
