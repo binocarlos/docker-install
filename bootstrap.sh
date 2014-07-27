@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eo pipefail
 export DEBIAN_FRONTEND=noninteractive
-export DOCKER_INSTALL_REPO=${SMESH_REPO:-"https://github.com/binocarlos/docker-install.git"}
+export DOCKER_INSTALL_REPO=${DOCKER_INSTALL_REPO:-"https://github.com/binocarlos/docker-install.git"}
 
 if ! which apt-get &>/dev/null
 then
