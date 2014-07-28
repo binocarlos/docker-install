@@ -31,12 +31,13 @@ if you are using vagrant - run this command to allow the vagrant user access to 
 $ sudo usermod -aG docker vagrant
 ```
 
+## HTTP interface
 
-## notes
+to get docker to listen on the HTTP interface as well as unix:///var/run/docker.sock
 
-you can use docker for installing software (containers).
-
-This installs docker so it can do its magic.
+```bash
+$ sudo ./configure.sh 192.168.8.120 2375
+```
 
 ## license
 
