@@ -28,11 +28,4 @@ EOF
 	echo
 }
 
-main() {
-	case "$1" in
-	dockeropts)					shift; cmd-dockeropts "$@";;
-	*)                  cmd-help "$@";;
-	esac
-}
-
-main "$@"
+cmd-dockeropts "$@"
