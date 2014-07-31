@@ -1,6 +1,9 @@
-.PHONY: install aufs network vagrant
+.PHONY: installold install aufs network vagrant
 
-install: aufs network
+install:
+	curl -sSL https://get.docker.io/ubuntu/ | sudo sh
+
+installold: aufs network
 	egrep -i "^docker" /etc/group || groupadd docker
 	curl https://get.docker.io/gpg | apt-key add -
 	echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list
